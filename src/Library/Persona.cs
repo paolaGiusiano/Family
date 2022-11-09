@@ -16,6 +16,10 @@ namespace Library
             this.edad = edad;
         }
 
+        /*public void Accept(Visitor visitor) { 
+                visitor.Visit(this);
+        }*/
+
     }
 
 

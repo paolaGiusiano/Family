@@ -6,17 +6,12 @@ namespace Library
 {
     public class Node<T>
     {
-        //private int number;
+     
         private T dato;
 
-        private List<Node<T>> children = new List<Node<T>>();
 
-        /*public int Number {
-            get
-            {
-                return this.number;
-            }
-        }*/
+        public /*private*/ List<Node<T>> children = new List<Node<T>>();
+
 
         public T Dato{
             get
@@ -26,7 +21,6 @@ namespace Library
 
         }
 
-
         public ReadOnlyCollection<Node<T>> Children { 
             get
             {
@@ -34,27 +28,22 @@ namespace Library
             }
         }
 
-        /*public Node(int number)
-        {
-            this.number = number;
-        }*/
-
-
-       public Node(T dato)
-       {
-        this.dato = dato;
+    
+       public Node(T t){
+        this.dato = t;
        }
 
 
-        public void AddChildren(Node<T> n)
+
+        public void AddChildren(Node<T> t)
         {
-            this.children.Add(n);
+            this.children.Add(t);
         }
-        
+
+               
+        public void Accept(Visitor<T> visitor) { 
+            visitor.Visit(this);
+        }
+
     }
 }
-/*
-public Persona p;
-public Node(Persona) 
-
-*/

@@ -33,9 +33,11 @@ namespace Program
             nP3.AddChildren(nP6);
             nP5.AddChildren(nP8);
            
+            SumaEdades sum = new SumaEdades();
+            sum.Visit(nP1);
+            Console.WriteLine($"La suma de todas las edades es: {sum.suma}");
 
-
-
+            
             /*Node n1 = new Node(1);
             Node n2 = new Node(2);
             Node n3 = new Node(3);
