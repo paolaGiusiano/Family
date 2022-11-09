@@ -4,13 +4,16 @@ using System.Collections.Generic;
 
 namespace Library{
 
-    public class HijoMayor: Visitor<Persona>{
+    public class NombreLargo: Visitor<Persona>{
 
-        public int mayor = 0;
+        public int largo = 0;
+
+        public string name;
         public override void Visit(Node<Persona> node)
         {
-            if (node.Dato.edad > this.mayor){
-                this.mayor = node.Dato.edad;
+            if (node.Dato.nombre.Length > this.largo){
+                this.largo = node.Dato.nombre.Length;
+                this.name = node.Dato.nombre;
             }
 
             foreach(Node<Persona> n in node.children){

@@ -8,11 +8,11 @@ namespace Program
         static void Main(string[] args)
         {
 
-            Persona P1 = new Persona("Pepe", 80);
+            Persona P1 = new Persona("Pp", 80);
             Persona P2 = new Persona("Juan", 40);
-            Persona P3 = new Persona("José", 43);
+            Persona P3 = new Persona("Jose", 43);
             Persona P4 = new Persona("Maria", 20);
-            Persona P5 = new Persona("Laura", 22);
+            Persona P5 = new Persona("Lau", 22);
             Persona P6 = new Persona("Paz", 18);
             Persona P7 = new Persona("Sol", 15);
             Persona P8 = new Persona("Lolo", 3);
@@ -36,6 +36,16 @@ namespace Program
             SumaEdades sum = new SumaEdades();
             sum.Visit(nP1);
             Console.WriteLine($"La suma de todas las edades es: {sum.suma}");
+
+            HijoMayor m = new HijoMayor();
+            m.Visit(nP1);
+            Console.WriteLine(m.mayor);
+
+            NombreLargo nam = new NombreLargo();
+            nam.Visit(nP1);
+            Console.WriteLine(nam.name);
+           
+
 
             
             /*Node n1 = new Node(1);
