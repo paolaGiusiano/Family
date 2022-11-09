@@ -11,6 +11,11 @@ namespace Library
 
         public int edad {get; set;}
 
+        public Persona(string nombre, int edad){
+            this.nombre = nombre;
+            this.edad = edad;
+        }
+
     }
 
 
