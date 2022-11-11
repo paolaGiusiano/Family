@@ -12,8 +12,7 @@ namespace Library{
             if (node.Dato.edad > this.mayor){
                 this.mayor = node.Dato.edad;
             }
-
-            foreach(Node<Persona> n in node.children){
+            foreach(Node<Persona> n in node.Children){
                 n.Accept(this);
             }
 

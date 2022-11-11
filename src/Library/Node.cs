@@ -9,9 +9,7 @@ namespace Library
      
         private T dato;
 
-
-        public /*private*/ List<Node<T>> children = new List<Node<T>>();
-
+        private List<Node<T>> children = new List<Node<T>>();
 
         public T Dato{
             get
@@ -32,8 +30,6 @@ namespace Library
        public Node(T t){
         this.dato = t;
        }
-
-
 
         public void AddChildren(Node<T> t)
         {

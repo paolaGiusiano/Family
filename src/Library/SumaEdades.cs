@@ -10,7 +10,7 @@ namespace Library{
         public override void Visit(Node<Persona> node)
         {
             suma += node.Dato.edad;
-            foreach(Node<Persona> n in node.children){
+            foreach(Node<Persona> n in node.Children){
                 n.Accept(this);
             }   
 

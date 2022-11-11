@@ -16,7 +16,7 @@ namespace Library{
                 this.name = node.Dato.nombre;
             }
 
-            foreach(Node<Persona> n in node.children){
+            foreach(Node<Persona> n in node.Children){
                 n.Accept(this);
             }
 
