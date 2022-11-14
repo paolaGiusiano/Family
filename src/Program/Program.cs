@@ -43,7 +43,7 @@ namespace Program
 
             NombreLargo nam = new NombreLargo();
             nam.Visit(nP1);
-            Console.WriteLine($"Persona con nombre más largo: {nam.name}");
+            Console.WriteLine($"El nombre más largo tiene {nam.largo} letras y es el de {nam.name}");
            
 
         }
