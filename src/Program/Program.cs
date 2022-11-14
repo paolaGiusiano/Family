@@ -33,17 +33,22 @@ namespace Program
             nP3.AddChildren(nP6);
             nP5.AddChildren(nP8);
            
+            Console.WriteLine();
+
             SumaEdades sum = new SumaEdades();
             sum.Visit(nP1);
             Console.WriteLine($"La suma de todas las edades es: {sum.suma}");
 
             HijoMayor m = new HijoMayor();
             m.Visit(nP1);
-            Console.WriteLine($"Hijo mayor: {m.mayor}");
+            Console.WriteLine($"{m.name_persona_mayor} es la persona mayor con {m.edad_persona_mayor} años");
+            Console.WriteLine($"El hijo mayor de {m.edad_persona_mayor} es {m.name_persona_mayor} con {m.edad_hijo_mayor}");
 
             NombreLargo nam = new NombreLargo();
             nam.Visit(nP1);
             Console.WriteLine($"El nombre más largo tiene {nam.largo} letras y es el de {nam.name}");
+
+            Console.WriteLine();
            
 
         }
