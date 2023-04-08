@@ -8,7 +8,7 @@ namespace Program
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Hola);
+            Console.WriteLine("Hola ");
 
             Persona P1 = new Persona("Pp", 80);
             Persona P2 = new Persona("Juan", 40);
