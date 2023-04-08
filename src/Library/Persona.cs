@@ -13,13 +13,11 @@ namespace Library
 
         public Persona(string nombre, int edad){
             this.nombre = nombre;
+            
             this.edad = edad;
         }
 
-        /*public void Accept(Visitor visitor) { 
-                visitor.Visit(this);
-        }*/
-
+   
     }
 
 
